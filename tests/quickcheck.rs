@@ -13,7 +13,6 @@ quickcheck! {
         }
         let mut out = out;
         out.copy_from_str(&src);
-        println!("{:?} {:?}", out, src);
         TestResult::from_bool(out == src && str::from_utf8(out.as_bytes()).is_ok())
     }
 }
