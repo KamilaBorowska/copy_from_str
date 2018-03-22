@@ -15,3 +15,6 @@ travis-ci = { repository = "xfix/copy_from_str" }
 
 [dependencies]
 extension-trait = "0.1.2"
+
+[dev-dependencies]
+quickcheck = "0.6.2"
