@@ -90,6 +90,7 @@ extension_trait! {
         /// ```
         ///
         /// [`split_at_mut`]: https://doc.rust-lang.org/std/primitive.str.html#method.split_at_mut
+        #[inline]
         fn copy_from_str(&mut self, src: &str) {
             unsafe { self.as_bytes_mut() }.copy_from_slice(src.as_bytes());
         }
