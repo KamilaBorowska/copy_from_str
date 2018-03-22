@@ -1,4 +1,4 @@
-//! Extension methods for copying strings and characters into a string.
+//! Extension methods for copying strings into a string.
 //!
 //! This crate provides [`copy_from_str`] function which can be used to
 //! mutate Rust strings. It works similarly to [`copy_from_slice`] from
@@ -34,7 +34,7 @@
 extern crate extension_trait;
 
 extension_trait! {
-    /// Extension methods for copying strings into a `&mut str`.
+    /// Extension method for copying a string into another string.
     pub CopyFromStrExt for str {
         /// Copies all elements from `src` into `self`, using a memcpy.
         ///

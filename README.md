@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/xfix/copy_from_str.svg?branch=master)](https://travis-ci.org/xfix/copy_from_str)
 
-Extension methods for copying strings and characters into a string.
+Extension methods for copying strings into a string.
 
 This crate provides `copy_from_str` function which can be used to
 mutate Rust strings. It works similarly to [`copy_from_slice`] from
