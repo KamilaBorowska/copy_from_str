@@ -4,7 +4,6 @@ extern crate quickcheck;
 
 use copy_from_str::CopyFromStrExt;
 use quickcheck::TestResult;
-use std::str;
 
 quickcheck! {
     fn prop(out: String, src: String) -> TestResult {
