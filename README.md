@@ -16,10 +16,10 @@ use copy_from_str::CopyFromStrExt;
 fn make_ascii_uppercase(mut input: &mut str) {
     let mut buffer = [0; 4];
     while let Some(ch) = input.chars().next() {
-        let end_position = ch.len_utf8();
         let src = ch.to_ascii_uppercase().encode_utf8(&mut buffer);
-        input[..end_position].copy_from_str(src);
-        input = &mut {input}[end_position..];
+        let (to_uppercase, rest) = { input }.split_at_mut(ch.len_utf8());
+        to_uppercase.copy_from_str(src);
+        input = rest;
     }
 }
 
