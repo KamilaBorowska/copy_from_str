@@ -11,7 +11,8 @@ documentation = "https://docs.rs/copy_from_str"
 readme = "README.md"
 
 [badges]
-travis-ci = { repository = "xfix/copy_from_str" }
+gitlab = { repository = "KonradBorowski/copy_from_str" }
+maintenance = { status = "actively-developed" }
 
 [dependencies]
 extension-trait = "0.1.2"
