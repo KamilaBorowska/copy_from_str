@@ -1,6 +1,6 @@
 [package]
 name = "copy_from_str"
-version = "1.0.1"
+version = "1.0.2"
 authors = ["Konrad Borowski <copyfromstr@borowski.pw>"]
 repository = "https://gitlab.com/KonradBorowski/copy_from_str"
 license = "MIT/Apache-2.0"
