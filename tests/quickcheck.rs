@@ -7,11 +7,13 @@ use quickcheck::TestResult;
 
 quickcheck! {
     fn prop(out: String, src: String) -> TestResult {
-        if out.len() != src.len() {
-            return TestResult::discard();
-        }
+        let range = ..out.len().min(src.len());
         let mut out = out;
-        out.copy_from_str(&src);
-        TestResult::from_bool(out == src)
+        if let (Some(out), Some(src)) = (out.get_mut(range), src.get(range)) {
+            out.copy_from_str(&src);
+            TestResult::from_bool(out == src)
+        } else {
+            TestResult::discard()
+        }
     }
 }
