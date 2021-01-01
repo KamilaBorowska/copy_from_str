@@ -35,8 +35,8 @@ extern crate extension_trait;
 use extension_trait::extension_trait;
 
 /// Extension method for copying a string into another string.
-#[extension_trait(pub)]
-impl CopyFromStrExt for str {
+#[extension_trait]
+pub impl CopyFromStrExt for str {
     /// Copies all elements from `src` into `self`, using a memcpy.
     ///
     /// The length of `src` must be the same as `self`.
