@@ -2,6 +2,7 @@
 name = "copy_from_str"
 version = "1.0.3"
 authors = ["Konrad Borowski <copyfromstr@borowski.pw>"]
+edition = "2018"
 repository = "https://gitlab.com/KonradBorowski/copy_from_str"
 license = "MIT/Apache-2.0"
 description = "An extension trait to copy a string into another string"
