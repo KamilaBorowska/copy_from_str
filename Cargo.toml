@@ -13,7 +13,7 @@ readme = "README.md"
 
 [badges]
 gitlab = { repository = "KonradBorowski/copy_from_str" }
-maintenance = { status = "actively-developed" }
+maintenance = { status = "passively-maintained" }
 
 [dependencies]
 extension-trait = "1.0.0"
