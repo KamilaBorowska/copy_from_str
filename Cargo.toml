@@ -12,7 +12,6 @@ documentation = "https://docs.rs/copy_from_str"
 readme = "README.md"
 
 [badges]
-gitlab = { repository = "KonradBorowski/copy_from_str" }
 maintenance = { status = "passively-maintained" }
 
 [dev-dependencies]
