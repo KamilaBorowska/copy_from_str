@@ -30,13 +30,8 @@
 #![deny(missing_docs)]
 #![no_std]
 
-extern crate extension_trait;
-
-use extension_trait::extension_trait;
-
 /// Extension method for copying a string into another string.
-#[extension_trait]
-pub impl CopyFromStrExt for str {
+pub trait CopyFromStrExt {
     /// Copies all elements from `src` into `self`, using a memcpy.
     ///
     /// The length of `src` must be the same as `self`.
@@ -92,6 +87,11 @@ pub impl CopyFromStrExt for str {
     ///
     /// [`split_at_mut`]: https://doc.rust-lang.org/std/primitive.str.html#method.split_at_mut
     #[allow(unused_attributes)]
+    #[inline]
+    fn copy_from_str(&mut self, src: &str);
+}
+
+impl CopyFromStrExt for str {
     #[inline]
     fn copy_from_str(&mut self, src: &str) {
         unsafe { self.as_bytes_mut() }.copy_from_slice(src.as_bytes());

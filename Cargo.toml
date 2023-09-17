@@ -15,8 +15,5 @@ readme = "README.md"
 gitlab = { repository = "KonradBorowski/copy_from_str" }
 maintenance = { status = "passively-maintained" }
 
-[dependencies]
-extension-trait = "1.0.0"
-
 [dev-dependencies]
 quickcheck = "1.0.3"
