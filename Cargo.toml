@@ -1,6 +1,6 @@
 [package]
 name = "copy_from_str"
-version = "1.0.5"
+version = "1.0.6"
 authors = ["Konrad Borowski <copyfromstr@borowski.pw>"]
 edition = "2018"
 repository = "https://github.com/xfix/copy_from_str"
